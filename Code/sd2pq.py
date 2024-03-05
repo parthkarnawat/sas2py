@@ -223,8 +223,7 @@ import saspy
 sas_session = saspy.SASsession(cfgname='local_com')
 
 import os
-# dataset_path = "Y:\KR_PL_IFRS9_02\Data\MEV\my_all_bau_mev_202309.sas7bdat"
-dataset_path = r"Y:\KR_PL_IFRS9_02\Data\Valid_base\valid_base_latest\kr_pl_vaccts_200706_perdefs_v5.sas7bdat"
+dataset_path = r"your_dataset_path"
 dataset_name = os.path.basename(dataset_path).split('.')[0]
 dataset_directory = os.path.dirname(dataset_path)
 sas_session.saslib('mylib', path=dataset_directory)
